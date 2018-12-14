@@ -1,8 +1,17 @@
-<div style="text-align:center">
+<header>
   <h1>
-    Welcome to our Angular Counter
+    Welcome to Our Angular Counter
   </h1>
-  <h3 (click)="onSelect(+1)"> + </h3>
-  <h2>{{counter}}</h2>
-  <h3 (click)="onSelect(-1)"> - </h3>
+</header>
+
+<div>
+
+  <p (click)="onSelect(+1)"> + </p>
+
+  <h2 [className]="counter < 0 ? 'negative' : 'positive'">{{counter}}</h2>
+
+  <p (click)="onSelect(-1)"> - </p>
+
 </div>
+
+<footer>&copy; 2018 David and Trevor</footer>

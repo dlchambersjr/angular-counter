@@ -7,12 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CounterComponent implements OnInit {
   counter = 0;
+  style = '';
 
   onSelect(value): void {
     this.counter = this.counter + value;
   }
-
-
 
   constructor() { }
 
