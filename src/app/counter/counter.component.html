@@ -1,17 +1,22 @@
 <header>
   <h1>
-    Welcome to Our Angular Counter
+    Welcome to Our
   </h1>
+
+  <img src="../../assets/AngularJS-Shield.svg">
+
+  <h1>
+    Counter
+  </h1>
+
 </header>
 
-<div>
+<p (click)="onSelect(+1)"> + </p>
 
-  <p (click)="onSelect(+1)"> + </p>
+<h2 [className]="counter < 0 ? 'negative' : 'positive'">{{counter}}</h2>
 
-  <h2 [className]="counter < 0 ? 'negative' : 'positive'">{{counter}}</h2>
+<p (click)="onSelect(-1)"> - </p>
 
-  <p (click)="onSelect(-1)"> - </p>
 
-</div>
 
 <footer>&copy; 2018 David and Trevor</footer>
